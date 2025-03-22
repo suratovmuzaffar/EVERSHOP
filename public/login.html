@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../build/index.css" />
+    <link rel="webside icon" href="./img/logo.svg" />
+    <title>EVERSHOP | LOGIN</title>
+  </head>
+  <body class="bg-[#f6f6f7fc]">
+    <nav
+      class="w-[100%] h-[92px] py-[25px] px-[50px] border-b-1 border-gray-200 flex justify-between"
+    >
+      <ul>
+        <div class="w-[270px] h-[41px] flex justify-evenly items-center">
+          <a href="./index.html"> <p>Shop🛒</p></a>
+          <a href="./aboutus.html"> <p>About us🌐</p></a>
+        </div>
+      </ul>
+      <ul>
+        <a href="./index.html"
+          ><img class="size-[35px]" src="./img/logo.svg" alt=""
+        /></a>
+      </ul>
+      <ul>
+        <div
+          class="w-[280px] h-[41px] flex justify-between items-center pl-[180px]"
+        >
+          <a href="">
+            <img class="size-[22px]" src="./img/search.svg" alt=""
+          /></a>
+          <a href=""><img class="size-[25px]" src="./img/shop.svg" alt="" /></a>
+          <a href="#"
+            ><img class="size-[25px]" src="./img/people.svg" alt=""
+          /></a>
+        </div>
+      </ul>
+    </nav>
+    <div class="w-[100%] h-[24px] my-[20px] mx-[165px] px-[55px]">
+      <a href="./index.html"><span class="text-blue-800">Home</span></a
+      ><span> / </span><span>Login</span>
+    </div>
+    <form
+      id="login-form"
+      class="max-w-[468px] mx-auto p-[45px] flex-col items-center bg-white shadow-lg shadow-gray-300"
+      method="get"
+    >
+      <h1
+        class="text-3xl font-medium text-gray-900 justify-center flex mb-[10px]"
+      >
+        Login
+      </h1>
+      <div class="mb-5">
+        <input
+          type="text"
+          id="email"
+          name="log-email"
+          placeholder="Email"
+          class="border border-gray-400 p-2.5 rounded-sm text-gray-500 text-sm w-[386px] block focus:border-gray-500 focus:ring-gray-500"
+          required
+        />
+      </div>
+      <div class="mb-2.5">
+        <input
+          type="password"
+          id="password"
+          name="log-password"
+          placeholder="Password"
+          class="border border-gray-400 p-2.5 rounded-sm text-gray-500 text-sm w-[386px] block focus:border-gray-500 focus:ring-gray-500"
+          required
+        />
+      </div>
+      <div class="w-[386px] h-[1px] bg-neutral-200 mb-2.5"></div>
+      <button
+        type="submit"
+        id="login-btn"
+        name="log-submit"
+        class="bg-gray-800 text-[18px] text-center text-sm text-white w-[386px] h-[48px] dark:bg-gray-700 dark:focus:ring-gray-800 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium hover:bg-gray-800 px-5 py-2.5 mb-2.5"
+      >
+        Sing in
+      </button>
+      <h6 class="w-[386px] flex gap-3">
+        <a href="./register.html"
+          ><span class="text-blue-600">Create an account</span></a
+        ><span>Forgot your password? </span>
+      </h6>
+    </form>
+  </body>
+  <script src="../build/login.js"></script>
+</html>
