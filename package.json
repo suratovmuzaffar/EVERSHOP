@@ -9,7 +9,8 @@
     "dev:ts3": "bun build --watch --outfile=./build/register.js ./src/register.ts",
     "dev:ts4": "bun build --watch --outfile=./build/aboutus.js ./src/aboutus.ts",
     "dev:ts5": "bun build --watch --outfile=./build/cart.js ./src/cart.ts",
-    "dev": "concurrently \"bun dev:tailwind\" \"bun dev:ts\" \"bun dev:ts2\" \"bun dev:ts3\" \"bun dev:ts4\" \"bun dev:ts5\""
+    "dev:ts6": "bun build --watch --outfile=./build/info.js ./src/info.ts",
+    "dev": "concurrently \"bun dev:tailwind\" \"bun dev:ts\" \"bun dev:ts2\" \"bun dev:ts3\" \"bun dev:ts4\" \"bun dev:ts5\" \"bun dev:ts6\""
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.3",
