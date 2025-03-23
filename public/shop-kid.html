@@ -38,11 +38,234 @@
         </div>
       </ul>
     </nav>
-    <div class="w-[100%] h-[24px] my-[10px] mx-[165px] px-[55px]">
-      <a href="./index.html"><span class="text-blue-800">Home</span></a
-      ><span> / </span><span>Kid</span>
+    <div class="ml-56 w-full max-w-[1200px] my-5 flex flex-col gap-10 justify-start items-start">
+        <div class="flex items-center gap-1 text-sm">
+            <a href="./index.html" class="text-blue-800 hover:underline">Home</a>
+            <span class="text-gray-500">/</span>
+            <span class="text-gray-500">Kid</span>
+        </div>
+        <h1 class="text-4xl font-bold uppercase">KID</h1>
+        <p class="text-lg text-gray-700">Kid</p>
     </div>
-
+    <section class="grid grid-cols-1 mx-56 md:grid-cols-4 gap-8">
+        <div class="md:col-span-1">
+            <div class="product-filter-tool hidden md:block closed">
+                <div class="filter-heading">
+                    <span class="font-bold">SHOP BY</span>
+                </div>
+                <div class="price-filter">
+                    <div class="filter-item-title">Price</div>
+                    <div class="rangeslider">
+                        <input type="range" class="min" min="126" max="537" value="126">
+                        <div class="tooltip min">
+                            <div class="push" style="width:calc(0% + 3px)"></div>
+                            <output>$126.00</output>
+                        </div>
+                        <input type="range" class="max" min="126" max="537" value="537">
+                        <div class="tooltip max">
+                            <div class="push" style="width:calc(100% - 6px)"></div>
+                            <output>$537.00</output>
+                        </div>
+                    </div>
+                </div>
+                <div class="attribute-filter mt-8">
+                    <div class="filter-item-title">
+                        <span class="font-medium">Size</span>
+                    </div>
+                    <ul class="filter-option-list">
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">XL</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">S</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">L</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">M</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">X</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="attribute-filter mt-8">
+                    <div class="filter-item-title">
+                        <span class="font-medium">Color</span>
+                    </div>
+                    <ul class="filter-option-list">
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">White</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">Black</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">Pink</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">Red</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">Purple</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="attribute-filter mt-8">
+                    <div class="filter-item-title">
+                        <span class="font-medium">Brand</span>
+                    </div>
+                    <ul class="filter-option-list">
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">Converse</span>
+                            </label>
+                        </li>
+                        <li class="mt-2 mr-2">
+                            <label class="flex justify-start items-center">
+                                <input type="checkbox" class="mr-2">
+                                <span class="filter-option">Adidas</span>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <a class="filter-closer flex md:hidden" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"></path>
+                    </svg>
+                </a>
+            </div>
+            <a class="filter-opener flex md:hidden" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"></path>
+                </svg>
+            </a>
+        </div>
+        <div class="md:col-span-3">
+            <div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div class="listing-tem">
+                        <div class="product-thumbnail-listing">
+                            <a href="/kids/coated-glitter-chuck-taylor-all-star-71">
+                                <img src="https://demositefiles.blob.core.windows.net/images/catalog/9804/3444/plv1919-Purple-listing.png" alt="Coated glitter chuck taylor all star">
+                            </a>
+                        </div>
+                        <div class="product-name product-list-name mt-4 mb-1">
+                            <a href="/kids/coated-glitter-chuck-taylor-all-star-71" class="font-bold hover:underline h5">
+                                <span>Coated glitter chuck taylor all star</span>
+                            </a>
+                        </div>
+                        <div class="product-price-listing">
+                            <div>
+                                <span class="sale-price font-semibold">$261.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-tem">
+                        <div class="product-thumbnail-listing">
+                            <a href="/kids/chuck-taylor-all-star-70">
+                                <img src="https://demositefiles.blob.core.windows.net/images/catalog/8057/4387/plv7702-Red-listing.png" alt="Chuck taylor all star">
+                            </a>
+                        </div>
+                        <div class="product-name product-list-name mt-4 mb-1">
+                            <a href="/kids/chuck-taylor-all-star-70" class="font-bold hover:underline h5">
+                                <span>Chuck taylor all star</span>
+                            </a>
+                        </div>
+                        <div class="product-price-listing">
+                            <div>
+                                <span class="sale-price font-semibold">$504.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-tem">
+                        <div class="product-thumbnail-listing">
+                            <a href="/kids/continental-80-shoes">
+                                <img src="https://demositefiles.blob.core.windows.net/images/catalog/1840/2713/plv2390-Red-listing.png" alt="Continental 80 shoes">
+                            </a>
+                        </div>
+                        <div class="product-name product-list-name mt-4 mb-1">
+                            <a href="/kids/continental-80-shoes" class="font-bold hover:underline h5">
+                                <span>Continental 80 shoes</span>
+                            </a>
+                        </div>
+                        <div class="product-price-listing">
+                            <div>
+                                <span class="sale-price font-semibold">$126.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-tem">
+                        <div class="product-thumbnail-listing">
+                            <a href="/kids/swift-run-x-shoes-14">
+                                <img src="https://demositefiles.blob.core.windows.net/images/catalog/1840/2713/plv2390-Red-listing.png" alt="Swift run x shoes">
+                            </a>
+                        </div>
+                        <div class="product-name product-list-name mt-4 mb-1">
+                            <a href="/kids/swift-run-x-shoes-14" class="font-bold hover:underline h5">
+                                <span>Swift run x shoes</span>
+                            </a>
+                        </div>
+                        <div class="product-price-listing">
+                            <div>
+                                <span class="sale-price font-semibold">$337.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="listing-tem">
+                        <div class="product-thumbnail-listing">
+                            <a href="/kids/nmd_r1-shoes-7">
+                                <img src="https://demositefiles.blob.core.windows.net/images/catalog/1083/2531/plv1405-White-listing.png" alt="Nmd_r1 shoes">
+                            </a>
+                        </div>
+                        <div class="product-name product-list-name mt-4 mb-1">
+                            <a href="/kids/nmd_r1-shoes-7" class="font-bold hover:underline h5">
+                                <span>Nmd_r1 shoes</span>
+                            </a>
+                        </div>
+                        <div class="product-price-listing">
+                            <div>
+                                <span class="sale-price font-semibold">$537.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="product-count italic block mt-8">4 products</span>
+            </div>
+        </div>
+    </section>
     <footer
       class="flex justify-center gap-[650px] items-center p-4 bg-gray-200 text-gray-600 text-sm border-t-2 border-gray-300 mt-[17%]"
     >
