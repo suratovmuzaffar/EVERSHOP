@@ -10,7 +10,10 @@
     "dev:ts4": "bun build --watch --outfile=./build/aboutus.js ./src/aboutus.ts",
     "dev:ts5": "bun build --watch --outfile=./build/cart.js ./src/cart.ts",
     "dev:ts6": "bun build --watch --outfile=./build/info.js ./src/info.ts",
-    "dev": "concurrently \"bun dev:tailwind\" \"bun dev:ts\" \"bun dev:ts2\" \"bun dev:ts3\" \"bun dev:ts4\" \"bun dev:ts5\" \"bun dev:ts6\""
+    "dev:ts7": "bun build --watch --outfile=./build/shop-kid.js ./src/shop-kid.ts",
+    "dev:ts8": "bun build --watch --outfile=./build/shop-men.js ./src/shop-men.ts",
+    "dev:ts9": "bun build --watch --outfile=./build/shop-women.js ./src/shop-women.ts",
+    "dev": "concurrently \"bun dev:tailwind\" \"bun dev:ts\" \"bun dev:ts2\" \"bun dev:ts3\" \"bun dev:ts4\" \"bun dev:ts5\" \"bun dev:ts6\" \"bun dev:ts7\" \"bun dev:ts8\" \"bun dev:ts9\""
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.3",
