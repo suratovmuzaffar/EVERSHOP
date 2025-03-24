@@ -92,9 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
 interface Product {
-  id: number;
   name: string;
   price: number;
   image: string;
@@ -102,13 +100,11 @@ interface Product {
 
 const xlproduct: Product[] = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126.0,
     image: "./img/xl.png",
   },
   {
-    id: 2,
     name: "Swift run x shoes",
     price: 337.0,
     image:
@@ -118,13 +114,11 @@ const xlproduct: Product[] = [
 
 const lproduct: Product[] = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126.0,
     image: "./img/nike-002.png",
   },
   {
-    id: 2,
     name: "Swift run x shoes",
     price: 337.0,
     image:
@@ -134,7 +128,6 @@ const lproduct: Product[] = [
 
 const mproduct: Product[] = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126.0,
     image: "./img/nike-003.png",
@@ -143,13 +136,11 @@ const mproduct: Product[] = [
 
 const xproduct: Product[] = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126.0,
     image: "./img/xl.png",
   },
   {
-    id: 2,
     name: "Swift run x shoes",
     price: 337.0,
     image: "./img/nike-005.png",
@@ -158,7 +149,6 @@ const xproduct: Product[] = [
 
 const sproduct: Product[] = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126.0,
     image:
@@ -168,13 +158,11 @@ const sproduct: Product[] = [
 
 const whiteProducts: Product[] = [
   {
-    id: 1,
     name: "White Sneakers",
     price: 120.0,
     image: "./img/xl.png",
   },
   {
-    id: 2,
     name: "Taylor 002",
     price: 620.0,
     image: "./img/nike-005.png",
@@ -183,13 +171,11 @@ const whiteProducts: Product[] = [
 
 const blackProducts: Product[] = [
   {
-    id: 1,
     name: "Black Running Shoes",
     price: 350.0,
     image: "./img/black.png",
   },
   {
-    id: 2,
     name: "Black Running Shoes",
     price: 1250.0,
     image: "./img/black-001.png",
@@ -198,7 +184,6 @@ const blackProducts: Product[] = [
 
 const pinkProducts: Product[] = [
   {
-    id: 3,
     name: "Pink Shoes",
     price: 135.0,
     image: "./img/nike-002.png",
@@ -207,7 +192,6 @@ const pinkProducts: Product[] = [
 
 const redProducts: Product[] = [
   {
-    id: 11,
     name: "Red Sneakers",
     price: 140.0,
     image:
@@ -217,7 +201,6 @@ const redProducts: Product[] = [
 
 const purpleProducts: Product[] = [
   {
-    id: 4,
     name: "Red Sneakers",
     price: 140.0,
     image:
@@ -226,8 +209,7 @@ const purpleProducts: Product[] = [
 ];
 
 function renderProducts(products: Product[]) {
-  const container = document.getElementById("list-product");
-  if (!container) return;
+  const container = document.getElementById("list-product")!;
 
   const fragment = document.createDocumentFragment();
 
@@ -237,7 +219,6 @@ function renderProducts(products: Product[]) {
 
     const productImage = document.createElement("img");
     productImage.src = product.image;
-    productImage.alt = product.name;
     productImage.className = "w-full h-40 object-cover";
 
     const productName = document.createElement("h3");
@@ -253,36 +234,4 @@ function renderProducts(products: Product[]) {
   }
 
   container.replaceChildren(fragment);
-}
-
-function rendercolor(products: Product[]) {
-  const container = document.getElementById("list-product");
-  if (!container) return;
-
-  container.innerHTML = "";
-
-  const fragment = document.createDocumentFragment();
-
-  for (const product of products) {
-    const productCard = document.createElement("div");
-    productCard.className = "product-card p-4 rounded-lg";
-
-    const productImage = document.createElement("img");
-    productImage.src = product.image;
-    productImage.alt = product.name;
-    productImage.className = "w-full h-40 object-cover";
-
-    const productName = document.createElement("h3");
-    productName.textContent = product.name;
-    productName.className = "font-bold mt-2";
-
-    const productPrice = document.createElement("p");
-    productPrice.textContent = `$${product.price}`;
-    productPrice.className = "text-lg font-semibold";
-
-    productCard.append(productImage, productName, productPrice);
-    fragment.appendChild(productCard);
-  }
-
-  container.appendChild(fragment);
 }

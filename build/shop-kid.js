@@ -85,13 +85,11 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 var xlproduct = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126,
     image: "./img/xl.png"
   },
   {
-    id: 2,
     name: "Swift run x shoes",
     price: 337,
     image: "https://demositefiles.blob.core.windows.net/images/catalog/9804/3444/plv1919-Purple-listing.png"
@@ -99,13 +97,11 @@ var xlproduct = [
 ];
 var lproduct = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126,
     image: "./img/nike-002.png"
   },
   {
-    id: 2,
     name: "Swift run x shoes",
     price: 337,
     image: "https://demositefiles.blob.core.windows.net/images/catalog/9804/3444/plv1919-Purple-listing.png"
@@ -113,7 +109,6 @@ var lproduct = [
 ];
 var mproduct = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126,
     image: "./img/nike-003.png"
@@ -121,13 +116,11 @@ var mproduct = [
 ];
 var xproduct = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126,
     image: "./img/xl.png"
   },
   {
-    id: 2,
     name: "Swift run x shoes",
     price: 337,
     image: "./img/nike-005.png"
@@ -135,7 +128,6 @@ var xproduct = [
 ];
 var sproduct = [
   {
-    id: 1,
     name: "Continental 80 shoes",
     price: 126,
     image: "https://demositefiles.blob.core.windows.net/images/catalog/1840/2713/plv2390-Red-listing.png"
@@ -143,13 +135,11 @@ var sproduct = [
 ];
 var whiteProducts = [
   {
-    id: 1,
     name: "White Sneakers",
     price: 120,
     image: "./img/xl.png"
   },
   {
-    id: 2,
     name: "Taylor 002",
     price: 620,
     image: "./img/nike-005.png"
@@ -157,13 +147,11 @@ var whiteProducts = [
 ];
 var blackProducts = [
   {
-    id: 1,
     name: "Black Running Shoes",
     price: 350,
     image: "./img/black.png"
   },
   {
-    id: 2,
     name: "Black Running Shoes",
     price: 1250,
     image: "./img/black-001.png"
@@ -171,7 +159,6 @@ var blackProducts = [
 ];
 var pinkProducts = [
   {
-    id: 3,
     name: "Pink Shoes",
     price: 135,
     image: "./img/nike-002.png"
@@ -179,7 +166,6 @@ var pinkProducts = [
 ];
 var redProducts = [
   {
-    id: 11,
     name: "Red Sneakers",
     price: 140,
     image: " https://demositefiles.blob.core.windows.net/images/catalog/1840/2713/plv2390-Red-listing.png"
@@ -187,7 +173,6 @@ var redProducts = [
 ];
 var purpleProducts = [
   {
-    id: 4,
     name: "Red Sneakers",
     price: 140,
     image: "https://demositefiles.blob.core.windows.net/images/catalog/9804/3444/plv1919-Purple-listing.png"
@@ -195,15 +180,12 @@ var purpleProducts = [
 ];
 function renderProducts(products) {
   const container = document.getElementById("list-product");
-  if (!container)
-    return;
   const fragment = document.createDocumentFragment();
   for (const product of products) {
     const productCard = document.createElement("div");
     productCard.className = "product-card p-4 rounded-lg";
     const productImage = document.createElement("img");
     productImage.src = product.image;
-    productImage.alt = product.name;
     productImage.className = "w-full h-40 object-cover";
     const productName = document.createElement("h3");
     productName.textContent = product.name;
